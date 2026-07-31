@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Archivo estático</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='estilos.css') }}"
+    >
+</head>
+<body>
+    <main class="contenedor">
+        <h1>{{ titulo }}</h1>
+
+        <p>
+            Esta página utiliza una plantilla HTML y un archivo CSS
+            guardado en la carpeta static.
+        </p>
+
+        <a class="boton" href="#">Botón de ejemplo</a>
+    </main>
+</body>
+</html>
